@@ -31,4 +31,14 @@ $( document ).ready(function() {
         $(window).on('resize', function(){
             setPadding();
         });
+
+        $('.discover__nav__left').click(function(e){
+            e.preventDefault();
+            owlDiscover.trigger('prev.owl.carousel');
+        })
+
+        $('.discover__nav__right').click(function(e){
+            e.preventDefault();
+             owlDiscover.trigger('next.owl.carousel');
+        })
 });

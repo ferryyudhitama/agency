@@ -402,6 +402,7 @@ a:hover{
 
 .discover{
     padding: 50px 0 70px;
+    position: relative;
 }
 
 .dicover__header {
@@ -411,11 +412,11 @@ a:hover{
 }
 
 .discover__wrap{
-
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     display: flex;
+    position: relative;
 }
 
 .discover_slider{
@@ -528,6 +529,80 @@ span.discover__text{
     background: rgba(255, 255, 255, 0.2);
 }
 
+span.discover__bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 0px;
+}
+.discover__bottom img{
+    width: 100%;
+}
+
+.discover__bottom__tag{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 150%;
+    color: #3C6AD4;
+    text-transform: uppercase;
+}
+
+.discover__bottom__title{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    color: #0F172A;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.discover__bottom__location img{
+    width: 18px !important;
+    margin-right: 10px;
+}
+
+.discover__bottom__location{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3356C2;
+    display: flex;
+}
+
+.discover__nav__item{
+    width: 48px;
+    height: 48px;
+    background: #5185E0;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover__nav__left {
+    padding-right: 5px !important;
+    position: relative;
+    right: 24px;
+}
+
+.discover__nav__right{
+    position: relative;
+    left: 24px;
+}
+
+.discover_nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    z-index: 2;
+}
 /* eof Discover style */
 
 /* Responsive */
