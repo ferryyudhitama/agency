@@ -5,8 +5,9 @@
 3. Intro style 
 4. Property style
 5. Discover style
-5. Estates style
-6. Responsive
+6. Estates style
+7. Teams style
+9. Responsive
 
 */
 
@@ -609,6 +610,10 @@ span.discover__bottom {
 /* eof Discover style */
 
 /* Estates style */
+
+    .estates{
+        margin-top: 90px;
+    }
     .accordion {
       width: 100%;
       margin: auto;
@@ -620,14 +625,9 @@ span.discover__bottom {
         padding-top: 40px;
     }
 
-    .accordion-item {
-      /* border-top: 1px solid #ccc; */
-    }
-
     .accordion-header {
       display: flex;
       align-items: center;
-      /* background-color: #f1f1f1; */
       cursor: pointer;
       padding: 35px 20px;
       font-size: 16px;
@@ -639,10 +639,6 @@ span.discover__bottom {
     .accordion-title {
         display: flex;
         flex: 1;
-    }
-
-    .accordion-header:hover {
-      /* background-color: #eaeaea; */
     }
 
     .accordion-icon{
@@ -665,7 +661,7 @@ span.discover__bottom {
     }
 
     .accordion-item.active .accordion-content {
-      max-height: 300px; /* Adjust based on expected content height */
+      max-height: 300px; 
       padding: 20px;
       display: flex;
       justify-content: flex-end;
@@ -749,6 +745,16 @@ span.discover__bottom {
     }
 
 /* eof Estates style */
+
+/* Teams style */
+
+    .teams {
+        padding: 90px 0 100px;
+        background: #F1F6FD;
+        margin-top: 80px;
+    }
+
+/* eof Teams style */
 
 /* Responsive */
 
