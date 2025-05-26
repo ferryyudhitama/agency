@@ -5,6 +5,7 @@
 3. Intro style 
 4. Property style
 5. Discover style
+5. Estates style
 6. Responsive
 
 */
@@ -16,7 +17,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: none;
+  outline: none ;
 }
 :root {
   --lightblue: #72A5E8;
@@ -606,6 +607,148 @@ span.discover__bottom {
     z-index: 2;
 }
 /* eof Discover style */
+
+/* Estates style */
+    .accordion {
+      width: 100%;
+      margin: auto;
+      border-bottom: 1px solid #DFEBFA;
+      overflow: hidden;
+    }
+
+    .estates__wrap {
+        padding-top: 40px;
+    }
+
+    .accordion-item {
+      /* border-top: 1px solid #ccc; */
+    }
+
+    .accordion-header {
+      display: flex;
+      align-items: center;
+      /* background-color: #f1f1f1; */
+      cursor: pointer;
+      padding: 35px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      border-bottom: 1px solid #DFEBFA;
+    }
+
+    .accordion-title {
+        display: flex;
+        flex: 1;
+    }
+
+    .accordion-header:hover {
+      /* background-color: #eaeaea; */
+    }
+
+    .accordion-icon{
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+        background: #3C69D4;
+        border-radius: 9999px;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      background-color: #fff;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .accordion-item.active .accordion-content {
+      max-height: 300px; /* Adjust based on expected content height */
+      padding: 20px;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -95px;
+    }
+
+    .accordion-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .chevron {
+      transition: transform 0.3s ease;
+      font-size: 16px;
+    }
+
+    .accordion-item.active .accordion-icon {
+      transform: rotate(180deg);
+    }
+
+    .accordion-number{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #CBD5E1;
+        margin-right: 70px;
+    }
+
+
+    .accordion-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: #94A3B8;
+    }
+
+
+
+    .accordion-item.active  .accordion-title{
+        color: #3356C2;
+    }
+
+    .accordion-item.active .accordion-header{
+        border-bottom: none;
+    }
+
+    .accordion-item.active{
+        border-bottom: 1px solid #3356C2;
+    }
+
+
+    .accordion-item.active  .accordion-number{
+        color: #475569;
+    }
+
+    .accordion__desc {
+        display: flex;
+        gap: 30px;
+        max-width: 682px;
+        position: relative;
+        right: 75px;
+    }
+
+    .accordion__desc img{
+        max-width: 216px;
+    }
+
+    .accordion__desc p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #334155;
+    }
+
+/* eof Estates style */
 
 /* Responsive */
 
