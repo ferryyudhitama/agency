@@ -746,6 +746,73 @@ span.discover__bottom {
 
 /* eof Estates style */
 
+
+/* Footer styles */
+
+footer{
+    background: var(--darkblue);
+    padding: 50px 0 25px;
+}
+
+footer ul{
+    list-style: none;
+    color: #fff;
+}
+
+.footer__lower{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    gap: 10px;
+        font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #F1F5F9;
+}
+
+.footer__tc ul{
+    display: flex;
+    gap: 10px;
+    color: #fff;
+}
+
+.footer__tc a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #F1F5F9;
+}
+
+.footer__desc {
+    margin-bottom: 70px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__desc h4{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: #F1F5F9;
+
+}
+
+.footer__newsletter span{
+    color: #3C6AD4;
+}
+
+/* eof Footer styles */
+
 /* Teams style */
 
     .teams {
@@ -815,6 +882,8 @@ span.discover__bottom {
         margin-right: 5px;
         margin-top: 3px;
     }
+
+    .footer__details
 
 /* eof Teams style */
 
