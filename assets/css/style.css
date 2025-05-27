@@ -164,6 +164,8 @@ a:hover{
     background-repeat: no-repeat !important;
     background-position: center !important;
     position: relative;
+    transition-property: none ! important;
+    animation: none ! important;
 }
 
 .banner__overlay{
