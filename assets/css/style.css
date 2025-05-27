@@ -747,72 +747,7 @@ span.discover__bottom {
 /* eof Estates style */
 
 
-/* Footer styles */
 
-footer{
-    background: var(--darkblue);
-    padding: 50px 0 25px;
-}
-
-footer ul{
-    list-style: none;
-    color: #fff;
-}
-
-.footer__lower{
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer__social{
-    display: flex;
-    color: #fff;
-    align-items: center;
-    gap: 10px;
-        font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #F1F5F9;
-}
-
-.footer__tc ul{
-    display: flex;
-    gap: 10px;
-    color: #fff;
-}
-
-.footer__tc a{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #F1F5F9;
-}
-
-.footer__desc {
-    margin-bottom: 70px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 100px;
-}
-
-.footer__desc h4{
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 120%;
-    color: #F1F5F9;
-
-}
-
-.footer__newsletter span{
-    color: #3C6AD4;
-}
-
-/* eof Footer styles */
 
 /* Teams style */
 
@@ -884,6 +819,76 @@ footer ul{
         margin-top: 3px;
     }
 
+
+
+/* eof Teams style */
+
+
+/* Footer styles */
+
+footer{
+    background: var(--darkblue);
+    padding: 50px 0 25px;
+}
+
+footer ul{
+    list-style: none;
+    color: #fff;
+}
+
+.footer__lower{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    gap: 10px;
+        font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #F1F5F9;
+}
+
+.footer__tc ul{
+    display: flex;
+    gap: 10px;
+    color: #fff;
+}
+
+.footer__tc a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #F1F5F9;
+}
+
+.footer__desc {
+    margin-bottom: 130px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.footer__desc h4{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: #F1F5F9;
+
+}
+
+.footer__newsletter span{
+    color: #3C6AD4;
+}
+
     .footer__details a{
         color: #ffffff;
         font-style: normal;
@@ -920,7 +925,101 @@ footer ul{
         margin-bottom: 10px;
     }
 
-/* eof Teams style */
+    .footer__newsletter form{
+        margin-top: 15px;
+        position: relative;
+    }
+
+    .footer__newsletter form input[type="text"]{
+        display: block;
+        width: 100%;
+        width: 95%;
+        padding: 20px 16px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .footer__newsletter form .btnsubmit{
+        width: 40px;
+        height: 40px;
+        background: #C6DBF7;
+        border-radius: 9999px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #C6DBF7;
+        position: absolute;
+        top: 7px;
+        right: 26px;
+        top: 12px;
+        right: 32px;
+    }
+
+    .footer__newsletter form label{
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin-left: 10px;
+        color: #E2E8F0;
+        position: relative;
+        top: 6px;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        margin: 0;
+    }
+
+    input[type="checkbox"] {
+        appearance: none;
+        background-color: var(--darkblue);
+        margin: 0;
+        font: inherit;
+        color: #fff;
+        width: 1.15em;
+        height: 1.15em;
+        border: 0.15em solid #fff;
+        border-radius: 0.15em;
+        transform: translateY(-0.075em);
+        position: relative;
+        top: 11px;
+
+    }
+
+    input[type="checkbox"]::before {
+        display: grid;
+        place-content: center;
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        background: #fff;
+        transform-origin: bottom left;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        position: absolute;
+        top: 2px;
+        left: 1px;
+    }
+
+    input[type="checkbox"]:checked::before {
+        transform: scale(1);
+    }
+
+    .form-control + .form-control {
+     margin-top: 1em;
+    }
+
+
+/* eof Footer styles */
 
 /* Responsive */
 
