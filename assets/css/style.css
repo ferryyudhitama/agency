@@ -162,6 +162,7 @@ a:hover{
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
+    position: relative;
 }
 
 .banner__overlay{
