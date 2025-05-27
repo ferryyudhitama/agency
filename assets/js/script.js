@@ -8,7 +8,7 @@ $( document ).ready(function() {
         setPadding();
 
 
-       var owlDiscover = $('.discover_slider');
+        var owlDiscover = $('.discover_slider');
 
         owlDiscover.owlCarousel({
             // center: true,
@@ -19,12 +19,34 @@ $( document ).ready(function() {
             // autoplay:true,
             responsive:{
                 0:{
-                    items:1
+                    items:1.1
                 },
                 
                 600:{
-                    items: 2.3,
+                    items: 2.4,
                 }
+            }
+        });
+
+        var owlHeadline= $('.header__headline');
+
+        owlHeadline.owlCarousel({
+            items: 3,
+            loop:true,
+            margin:50,
+            touchDrag:true,
+            mouseDrag: true,
+            responsive:{
+                0:{
+                    items:1.2,
+                    margin:10,
+                },
+                
+                993:{
+                    items: 3,
+                     margin:50,
+                }
+
             }
         });
 
@@ -44,18 +66,25 @@ $( document ).ready(function() {
 
 
         //accordion
-            const headers = document.querySelectorAll(".accordion-header");
-                headers.forEach(header => {
-                header.addEventListener("click", () => {
-                    const item = header.parentElement;
-                    item.classList.toggle("active");
+        const headers = document.querySelectorAll(".accordion-header");
+            headers.forEach(header => {
+            header.addEventListener("click", () => {
+                const item = header.parentElement;
+                item.classList.toggle("active");
 
-                    // Optional: close others
-                    document.querySelectorAll(".accordion-item").forEach(i => {
-                    if (i !== item) {
-                        i.classList.remove("active");
-                    }
-                    });
+                // Optional: close others
+                document.querySelectorAll(".accordion-item").forEach(i => {
+                if (i !== item) {
+                    i.classList.remove("active");
+                }
                 });
             });
+        });
+
+        //hamburger
+        $('#nav-icon3').click(function(e){
+            e.preventDefault();
+            $('.header__menu').toggleClass('active');
+            $(this).toggleClass('open');
+        })
 });
