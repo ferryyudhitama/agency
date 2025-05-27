@@ -42,7 +42,7 @@ ACF Fields
             - Bathrooms: Field type text \
             - Period: Select with value (regular, monthly, yearly) \
             - Tag(for sale): Select with value (For sale, etc) \
-            - Location: Field type text \
+            - Location: Field type text 
     
     Another way we can create new post with CPT UI called properties, and we create above field in every single page, after that we can call it in homepage.  
 
