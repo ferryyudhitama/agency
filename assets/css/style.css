@@ -646,11 +646,13 @@ span.discover__bottom {
     padding-right: 5px !important;
     position: relative;
     right: 24px;
+    cursor: pointer;
 }
 
 .discover__nav__right{
     position: relative;
     left: 24px;
+    cursor: pointer;
 }
 
 .discover_nav{
